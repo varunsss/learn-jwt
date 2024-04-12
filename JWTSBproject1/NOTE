@@ -1,0 +1,29 @@
+#1 - POST
+http://localhost:8088/auth/addNewUser
+
+{
+    "name": "anshul",
+    "password": "123",
+    "email": "anshul@gmail.com",
+    "roles": "ROLE_USER"
+}
+User Added Successfully
+
+#2 - POST
+http://localhost:8088/auth/generateToken
+
+{
+    "username": "anshul",
+    "password": "123"
+}
+eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbnNodWwiLCJpYXQiOjE3MTI5MDc2MTQsImV4cCI6MTcxMjkwOTQxNH0.kVR-15ajIqF8WofpVBrd37GTFJfowyY8zu7LGSqBtuk
+
+#3 GET
+http://localhost:8088/auth/user/userProfile
+
+Token - eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbnNodWwiLCJpYXQiOjE3MTI5MDc2MTQsImV4cCI6MTcxMjkwOTQxNH0.kVR-15ajIqF8WofpVBrd37GTFJfowyY8zu7LGSqBtuk
+# for header in code
+Authorization -  Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbnNodWwiLCJpYXQiOjE3MTI5MDc2MTQsImV4cCI6MTcxMjkwOTQxNH0.kVR-15ajIqF8WofpVBrd37GTFJfowyY8zu7LGSqBtuk
+
+Welcome to User Profile
+
